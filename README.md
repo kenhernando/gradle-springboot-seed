@@ -1,29 +1,16 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
 ### What is this repository for? ###
 
-* Back-End for BR Dashboard
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Seed project for a Spring-Boot Gradle setup
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* If behind a corporate firewall, ensure proper proxies are set in your environment variables (use the variables: *http_proxy* and *https_proxy*)
+* Clone this repository via command line or Sourcetree
 
 ### Contribution guidelines ###
 
 * Writing tests
 * Code review
 * Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
