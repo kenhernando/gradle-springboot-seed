@@ -5,8 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 /*
- * This main class needs to be in the same package with the controllers, else
- * you need to utilize @ComponentScan and define your package/s explicitly
+ * Change parameter in @ComponentScan as you define your package/s
+ * You may also put this class in the same package with the controllers to remove the @ComponentScan annotation. 
  */
 
 @SpringBootApplication
