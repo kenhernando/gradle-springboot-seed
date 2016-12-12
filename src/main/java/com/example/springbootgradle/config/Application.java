@@ -1,4 +1,4 @@
-package com.example.springbootgradle.configs;
+package com.example.springbootgradle.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,8 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
  * You may also put this class in the same package with the controllers to remove the @ComponentScan annotation. 
  */
 
-@SpringBootApplication
-@ComponentScan({"com.example.springbootgradle"})
+@SpringBootApplication(scanBasePackages = { "com.example.springbootgradle" })
 public class Application {
 
 	public static void main(String[] args) throws Exception {
