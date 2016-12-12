@@ -2,7 +2,7 @@
 
 ### What is this repository for? ###
 
-* Seed project for a Spring-Boot Gradle setup
+* Seed project for a Spring-Boot(v1.4.2) Gradle(v2.14.1) setup
 
 ### How do I get set up? ###
 
