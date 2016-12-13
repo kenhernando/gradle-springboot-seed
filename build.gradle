@@ -17,7 +17,16 @@ buildscript {
 }
 
 apply plugin: 'java'
+apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
+
+jar {
+	baseName = 'spring-boot-gradle'
+	version = '0.0.1-SNAPSHOT'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -28,7 +37,13 @@ repositories {
 
 // In this section you declare the dependencies for your production and test code
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web")
-    compile("org.springframework.boot:spring-boot-devtools")
+	compile("org.springframework.boot:spring-boot-starter-web")
+    runtime("org.springframework.boot:spring-boot-devtools")
     testCompile("org.springframework.boot:spring-boot-starter-test")
+}
+
+// Enable exclusions below when packaging jars into production (external server)
+configurations {
+    //compile.exclude module: 'spring-boot-starter-tomcat'
+    //compile.exclude module: 'spring-boot-devtools'
 }
