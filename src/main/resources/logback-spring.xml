@@ -28,7 +28,7 @@
 		</encoder>
 	</appender>
 
-	<logger name="com.example.springbootgradle.controllers" level="DEBUG"
+	<logger name="com.example.springbootgradle" level="DEBUG"
 		additivity="false">
 		<appender-ref ref="CONSOLE" />
 		<appender-ref ref="FILE" />
